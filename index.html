@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="container">
+    <h1>Secure Password Generator</h1>
+    <div class="options">
+      <label>
+        <input type="checkbox" id="lowercase"> Include Lowercase Letters
+      </label>
+      <label>
+        <input type="checkbox" id="uppercase"> Include Uppercase Letters
+      </label>
+      <label>
+        <input type="checkbox" id="digits"> Include Digits
+      </label>
+      <label>
+        <input type="checkbox" id="special"> Include Special Characters
+      </label>
+      <label>
+        Password Length:
+        <input type="range" id="length" min="8" max="32" value="16">
+        <span id="length-value">16</span>
+      </label>
+    </div>
+    <div class="password-display">
+      <input type="text" id="password-input" readonly>
+      <button id="copy-button">Copy</button>
+    </div>
+    <button id="generate-button">Generate Password</button>
+  </div>
+
+ 
+</body>
+</html>
